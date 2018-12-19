@@ -1,32 +1,83 @@
-.App {
+body{
+  background-color: #00a2ff;
+  color: white;
+  margin: 0 30%;
+}
+
+div.App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+input.text{
+  border-style: none;
+  padding: 15px;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type="button"]{
+  background: none;
+  border-style: none;
+  background-color: #006caa;
   color: white;
+  padding: 10px;
+  border-radius: 50px;
+  width: 100px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  list-style-type: none;
+  padding: 5px 0;
+  font-size: 24px;
+
+  border: #006caa 3px solid;
+  margin-bottom: 15px;
+  border-radius: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+li div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+table{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.checkboxC{
+  -webkit-appearance: none;
+	background-color: #fafafa;
+  padding: 5px 14px;
+  border-radius: 50px;
+	position: relative;
+}
+
+.checkboxC:checked{
+  -webkit-appearance: none;
+  background-color: #006caa;
+	padding: 5px 14px; 
+	position: relative;
+}
+
+.removeLst{
+  background: none;
+  border-style: none;
+
+  background-color: #006caa;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  width: 32px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 400px){
+  body{
+    margin: 0 10%;
   }
 }
